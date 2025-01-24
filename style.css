@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: 'Noto Serif JP', sans-serif;
+    /* font-size: 1.1em; */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+title {
+    font-family: "Playfair Display", serif;;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+p{
+    line-height: 1.5;
+    margin-top: 19px;
+    margin-bottom: 10px;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/bg.JPG");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    filter: grayscale(0) blur(3px) contrast(0.7); /* blur 5px */
+}
+
+.container {
+    max-width: 1080px; /* ex: 960px */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.content-chapter {
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.album-jacket {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.album-jacket img {
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .gallery img {
+        max-width: 100%;
+    }
+    .album-jacket img {
+        max-width: 100%;
+    }
+}
+
+ul.bxslider
+{
+    margin: 0px !important;
+    padding: 0px !important;
+    box-sizing: border-box;
+}
+/* 画像スライダーの外枠設定 */
+.bx-wrapper {
+    width: 80% !important;
+    height: 80% !important;
+    margin: 0 auto !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: none !important;
+}
+/* 画像サイズの設定 */
+.bxslider img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    /* height: auto !important; */
+    object-fit: contain;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    border-radius: 2px;
+}
