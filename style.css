@@ -1,14 +1,20 @@
+@font-face
+{
+    font-family: "Xano Mincho";
+    src: url('https://cdn.leafscape.be/XANO-mincho/XANO-mincho_web.woff2')
+        format("woff2");
+}
+
 body {
     margin: 0;
-    font-family: 'Noto Serif JP', sans-serif;
-    /* font-size: 1.1em; */
+    font-family: 'Xano Mincho', 'Noto Serif JP', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     color: #fff;
 }
 
-title {
-    font-family: "Playfair Display", serif;;
-    font-size: 2em;
+h1 {
+    font-family: 'Xano Mincho', 'Noto Serif JP', sans-serif;
+    font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -17,20 +23,6 @@ p{
     margin-top: 19px;
     margin-bottom: 10px;
 }
-
-/* .background-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("img/bg.JPG");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: -1;
-    filter: grayscale(0) blur(3px) contrast(0.7);
-} */
 
 body:before{
     content: "";
@@ -48,7 +40,7 @@ body:before{
 }
 
 .container {
-    max-width: 1080px; /* ex: 960px */
+    max-width: 1080px;
     margin: 0 auto;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.15);
